@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Валерий Куликов](https://up.htmlacademy.ru/adaptive/21/user/1296301).
-* Наставник: `Неизвестно`.
+* Наставник: [Руслан Бреев](https://up.htmlacademy.ru/htmlcss/29/user/488939).
 
 ---
 
