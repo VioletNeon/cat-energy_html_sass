@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+<body class="page__body">
+<header class="page-header">
+  <a class="page-header__logo">
+    <img class="page-header__logo-image" src="https://via.placeholder.com/33x37" width="33" height="37" alt="Кэт энерджи">
+    <img class="page-header__logo-text logo-text" src="https://via.placeholder.com/101x18" width="101" height="18" alt="Кэт энерджи">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--active">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="">Подбор программы</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main class="page-form">
+  <h1 class="page-form__title">Подбор программы</h1>
+  <section class="form-section">
+    <div class="form-section__wrapper">
+      <h2 class="visually-hidden">Анкета</h2>
+      <p class="form-section__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <form class="form" method="get" action="https://echo.htmlacademy.ru/" target="_blank">
+        <fieldset class="info-about">
+          <legend class="visually-hidden">Введите данные Вашего кота</legend>
+          <ul class="info-about__list">
+            <li class="info-about__item">
+              <label class="info-about__input-description text-worksheet" for="cat-name" tabindex="0">Имя:*</label>
+              <input class="info-about__input input-worksheet text-worksheet" type="text" name="name" value="" placeholder="Барсик" id="cat-name">
+            </li>
+            <li class="info-about__item">
+              <label class="info-about__input-description text-worksheet" for="cat-weight" tabindex="0">Вес (кг):*</label>
+              <input class="info-about__input input-worksheet text-worksheet" type="text" name="weight" value="" placeholder="7" id="cat-weight">
+            </li>
+            <li class="info-about__item">
+              <label class="info-about__input-description text-worksheet" for="cat-age" tabindex="0">Возраст (лет):</label>
+              <input class="info-about__input input-worksheet text-worksheet" type="text" name="age" value="" placeholder="7" id="cat-age">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="choose-program">
+          <legend class="visually-hidden">Выберете программу</legend>
+          <ul class="choose-program__list">
+            <li class="choose-program__item">
+              <input class="choose-program__input choose-program__input--hidden" type="radio" name="slimming" value="" id="slimming" checked>
+              <label class="choose-program__input-description text-worksheet" for="slimming" tabindex="0">Похудение</label>
+            </li>
+            <li class="choose-program__item">
+              <input class="choose-program__input choose-program__input--hidden" type="radio" name="gain-weight" value="" id="gain-weight">
+              <label class="choose-program__input-description text-worksheet" for="gain-weight" tabindex="0">Набор массы</label>
+            </li>
+            <li class="choose-program__item">
+              <input class="choose-program__input choose-program__input--hidden" type="radio" name="get-advice" value="" id="get-advice">
+              <label class="choose-program__input-description text-worksheet" for="get-advice" tabindex="0">Не знаю (нужен Ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="data-contacts">
+          <legend class="data-contacts__title form-title">Контактные данные (владельца кота)</legend>
+          <ul class="data-contacts__list">
+            <li class="data-contacts__item">
+              <label class="data-contacts__input-description text-worksheet" for="email" tabindex="0">e-mail:*</label>
+              <input class="data-contacts__input input-worksheet text-worksheet" type="text" name="email" value="" placeholder="kuklachev@gmail.com" id="email">
+            </li>
+            <li class="data-contacts__item">
+              <label class="data-contacts__input-description text-worksheet" for="telephone-number" tabindex="0">Телефон:*</label>
+              <input class="data-contacts__input input-worksheet text-worksheet" type="text" name="telephone-number" value="" placeholder="8 (960) 900-60-90" id="telephone-number">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="leave-comment">
+          <legend class="leave-comment__title form-title">Комментарий</legend>
+          <label class="visually-hidden" for="comments" tabindex="0"></label>
+          <textarea class="leave-comment__field" rows="4" cols="35" maxlength="450" name="comments" id="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset class="additions">
+          <legend class="additions__title form-title">Дополнительно</legend>
+          <ul class="additions__list">
+            <li class="additions__item">
+              <input class="additions__input" type="checkbox" name="sweetener" value="" id="sweetener" checked>
+              <label class="additions__input-description text-worksheet" for="sweetener" tabindex="0">Сахарозаменитель</label>
+            </li>
+            <li class="additions__item">
+              <input class="additions__input" type="checkbox" name="water" value="" id="water">
+              <label class="additions__input-description text-worksheet" for="water" tabindex="0">Питьевая вода</label>
+            </li>
+            <li class="additions__item">
+              <input class="additions__input" type="checkbox" name="milk" value="" id="milk">
+              <label class="additions__input-description text-worksheet" for="milk" tabindex="0">Молоко</label>
+            </li>
+            <li class="additions__item">
+              <input class="additions__input" type="checkbox" name="vitamins" value="" id="vitamins">
+              <label class="additions__input-description text-worksheet" for="vitamins" tabindex="0">Витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="form-section__button button" type="submit" formaction="https://echo.htmlacademy.ru/">Отправить заявку</button>
+      </form>
+      <small class="form-section__legend">
+        * — Обязательные поля
+      </small>
+    </div>
+  </section>
+  <section class="address-section">
+    <div class="address-section__wrapper">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <div class="invent">
+        <p class="invent__text">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="invent__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+    </div>
+    <div class="address-section__map">
+      <img class="address-section__image-map" src="https://via.placeholder.com/320x362" width="320" height="362" alt="Месторасположение на карте - ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+    </div>
+  </section>
+</main>
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <a class="page-footer__logo">
+      <img class="page-footer__logo-text logo-text" src="https://via.placeholder.com/101x18" width="101" height="18" alt="Кэт энерджи">
+    </a>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
