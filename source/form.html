@@ -6,7 +6,7 @@
 </head>
 <body class="page__body">
 <header class="page-header">
-  <a class="page-header__logo">
+  <a class="page-header__logo" href="index.html">
     <img class="page-header__logo-image" src="https://via.placeholder.com/33x37" width="33" height="37" alt="Кэт энерджи">
     <img class="page-header__logo-text logo-text" src="https://via.placeholder.com/101x18" width="101" height="18" alt="Кэт энерджи">
   </a>
@@ -16,13 +16,13 @@
     </button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--active">
+        <li class="main-nav__item">
           <a href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
           <a href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="main-nav__item">
+        <li class="main-nav__item  main-nav__item--active">
           <a href="">Подбор программы</a>
         </li>
       </ul>
@@ -35,7 +35,7 @@
     <div class="form-section__wrapper">
       <h2 class="visually-hidden">Анкета</h2>
       <p class="form-section__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      <form class="form" method="get" action="https://echo.htmlacademy.ru/" target="_blank">
+      <form class="form" method="post" action="https://echo.htmlacademy.ru/" target="_blank">
         <fieldset class="info-about">
           <legend class="visually-hidden">Введите данные Вашего кота</legend>
           <ul class="info-about__list">
@@ -57,15 +57,15 @@
           <legend class="visually-hidden">Выберете программу</legend>
           <ul class="choose-program__list">
             <li class="choose-program__item">
-              <input class="choose-program__input choose-program__input--hidden" type="radio" name="slimming" value="" id="slimming" checked>
+              <input class="choose-program__input visually-hidden" type="radio" name="type-program" value="Похудение" id="slimming" checked>
               <label class="choose-program__input-description text-worksheet" for="slimming" tabindex="0">Похудение</label>
             </li>
             <li class="choose-program__item">
-              <input class="choose-program__input choose-program__input--hidden" type="radio" name="gain-weight" value="" id="gain-weight">
+              <input class="choose-program__input visually-hidden" type="radio" name="type-program" value="Набор массы" id="gain-weight">
               <label class="choose-program__input-description text-worksheet" for="gain-weight" tabindex="0">Набор массы</label>
             </li>
             <li class="choose-program__item">
-              <input class="choose-program__input choose-program__input--hidden" type="radio" name="get-advice" value="" id="get-advice">
+              <input class="choose-program__input visually-hidden" type="radio" name="type-program" value="Не знаю (нужен Ваш совет)" id="get-advice">
               <label class="choose-program__input-description text-worksheet" for="get-advice" tabindex="0">Не знаю (нужен Ваш совет)</label>
             </li>
           </ul>
@@ -92,19 +92,19 @@
           <legend class="additions__title form-title">Дополнительно</legend>
           <ul class="additions__list">
             <li class="additions__item">
-              <input class="additions__input" type="checkbox" name="sweetener" value="" id="sweetener" checked>
+              <input class="additions__input visually-hidden" type="checkbox" name="additions" value="Сахарозаменитель" id="sweetener" checked>
               <label class="additions__input-description text-worksheet" for="sweetener" tabindex="0">Сахарозаменитель</label>
             </li>
             <li class="additions__item">
-              <input class="additions__input" type="checkbox" name="water" value="" id="water">
+              <input class="additions__input visually-hidden" type="checkbox" name="additions" value="Питьевая вод" id="water">
               <label class="additions__input-description text-worksheet" for="water" tabindex="0">Питьевая вода</label>
             </li>
             <li class="additions__item">
-              <input class="additions__input" type="checkbox" name="milk" value="" id="milk">
+              <input class="additions__input visually-hidden" type="checkbox" name="additions" value="Молоко" id="milk">
               <label class="additions__input-description text-worksheet" for="milk" tabindex="0">Молоко</label>
             </li>
             <li class="additions__item">
-              <input class="additions__input" type="checkbox" name="vitamins" value="" id="vitamins">
+              <input class="additions__input visually-hidden" type="checkbox" name="additions" value="Витамины" id="vitamins">
               <label class="additions__input-description text-worksheet" for="vitamins" tabindex="0">Витамины</label>
             </li>
           </ul>
