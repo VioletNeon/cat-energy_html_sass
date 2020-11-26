@@ -1,26 +1,26 @@
 @mixin font-special($font-weight) {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: $font-weight;
-};
+}
 
 @mixin font-common($font-weight) {
   font-family: "Arial", "Tahoma", sans-serif;
   font-weight: $font-weight;
-};
+}
 
 @mixin font-size($size, $add-number: 0) {
   font-size: $size;
   line-height: $size + $add-number;
-};
+}
 
 @mixin position-zero() {
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-};
+}
 
 @mixin indent-zero() {
   padding: 0;
   margin: 0;
-};
+}

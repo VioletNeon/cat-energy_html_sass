@@ -4,14 +4,14 @@
 .invent {
   padding: 10px 0 7px 0;
   display: flex;
-};
+}
 
 .invent__text {
   @include font-special(400);
   @include font-size(16px, 2);
   width: 132px;
-};
+}
 
 .invent__address {
   width: 149px;
-};
+}

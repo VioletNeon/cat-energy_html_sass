@@ -3,12 +3,13 @@
 
 .social__list {
   list-style: none;
+
   @include indent-zero();
   display: flex;
-};
+}
 
 .social__link {
   margin-left: 37px;
   text-decoration: none;
   color: $black-color;
-};
+}
