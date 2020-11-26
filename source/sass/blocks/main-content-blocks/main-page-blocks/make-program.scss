@@ -1,0 +1,27 @@
+@import "./source/sass/variables.scss";
+@import "./source/sass/mixin.scss";
+
+.make-program {
+  background-image: url("./source/img/lucky-cat.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 320px 302px;
+};
+
+.make-program__wrapper {
+  background-color: rgba($green-color, 0.85);
+  background-size: 320px 302px;
+  background-position: top;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+};
+
+.make-program__text {
+  color: $white-color;
+  @include font-size(14px);
+  text-align: center;
+  @include indent-zero();
+  @include font-special(400);
+  text-transform: uppercase;
+};

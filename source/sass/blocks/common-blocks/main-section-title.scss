@@ -1,0 +1,8 @@
+@import "./source/sass/variables.scss";
+@import "./source/sass/mixin.scss";
+
+.main-section-title {
+  @include font-special(400);
+  @include font-size(36px, 4);
+  color: $black-color;
+};
