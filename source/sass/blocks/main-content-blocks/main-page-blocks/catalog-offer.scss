@@ -1,0 +1,22 @@
+@import "./source/sass/variables.scss";
+@import "./source/sass/mixin.scss";
+
+.catalog-offer {
+  background-color: $basic-gray-color;
+  padding: 0 20px 23px 20px;
+}
+
+.catalog-offer__title {
+  padding: 40px 0 19px 0;
+}
+
+.catalog-offer__text {
+  padding: 0 0 24px 0;
+}
+
+.catalog-offer__link {
+  @include font-special(400);
+  @include font-size(16px);
+  color: $black-color;
+  text-decoration: none;
+}
