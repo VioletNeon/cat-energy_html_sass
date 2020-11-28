@@ -1,0 +1,17 @@
+@import "./source/sass/variables.scss";
+@import "./source/sass/mixin.scss";
+
+.button {
+  background-color: $green-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0 12px 0;
+  text-decoration: none;
+  min-width: 280px;
+  color: $white-color;
+
+  @include font-size(14px, 4);
+  @include font-special(400);
+  text-transform: uppercase;
+}

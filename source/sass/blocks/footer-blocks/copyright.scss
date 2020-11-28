@@ -1,0 +1,10 @@
+@import "./source/sass/variables.scss";
+@import "./source/sass/mixin.scss";
+
+.copyright__link {
+  text-decoration: none;
+  color: $special-dark-grey-color;
+
+  @include font-common(400);
+  @include font-size(16px, 2);
+}

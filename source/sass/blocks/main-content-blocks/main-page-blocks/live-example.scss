@@ -1,0 +1,115 @@
+@import "./source/sass/variables.scss";
+@import "./source/sass/mixin.scss";
+
+.live-example {
+  background-color: $light-gray-color;
+  padding: 35px 0 40px 0;
+}
+
+.live-example__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.live-example__title {
+  padding: 0 0 35px 0;
+  margin: 0;
+}
+
+.live-example__text {
+  @include indent-zero();
+}
+
+.live-example__stats {
+  padding: 27px 0 25px 0;
+  margin: 0;
+  display: flex;
+  width: 280px;
+}
+
+.live-example__stats-wrapper {
+  width: 124px;
+  height: 72px;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.live-example__number {
+  width: 124px;
+  height: 56px;
+  border-radius: 3px;
+  border: 1px solid $gray-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include font-special(400);
+  @include font-size(24px);
+}
+
+.live-example__description {
+  background-color: $light-gray-color;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 77px;
+  height: min-content;
+  padding: 0 6px;
+  margin: auto;
+
+  @include font-common(400);
+  @include font-size(12px);
+  position: relative;
+  bottom: 8px;
+}
+
+.live-example__cost {
+  width: 280px;
+  display: flex;
+  justify-content: center;
+
+  @include font-special(400);
+  @include font-size(14px, 6);
+  text-transform: uppercase;
+  margin: 0 0 44px 0;
+}
+
+.live-example__cost-number {
+  margin: 0;
+}
+
+.live-example__images {
+  @include indent-zero();
+  list-style: none;
+}
+
+.live-example__bar-box {
+  margin: 25px 0 0 0;
+  display: flex;
+  justify-content: center;
+  width: 280px;
+}
+
+.live-example__bar-box span {
+  @include font-special(400);
+  @include font-size(16px, 4);
+  @include indent-zero();
+}
+
+.live-example__scale {
+  margin: 3px 18px 0 18px;
+  padding: 0;
+  width: 84px;
+  height: 14px;
+  border-radius: 6px;
+  background-color: $white-color;
+  border: 1px solid $gray-color;
+}
+
+.live-example__bar {
+  width: 35px;
+  height: 6px;
+  background-color: $green-color;
+  border-radius: 6px;
+  margin: 4px 6px;
+}
