@@ -1,7 +1,10 @@
 @import "./source/sass/variables.scss";
 @import "./source/sass/mixin.scss";
 
-.text {
-  @include font-size(14px, 18px);
+.text-worksheet {
   color: $special-dark-grey-color;
+  text-transform: uppercase;
+
+  @include font-special(400);
+  @include font-size(16px, 18px);
 }

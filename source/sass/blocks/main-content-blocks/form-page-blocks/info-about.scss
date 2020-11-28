@@ -1,0 +1,28 @@
+@import "./source/sass/variables.scss";
+@import "./source/sass/mixin.scss";
+
+.info-about {
+  border: none;
+  padding: 14px 0 10px 0;
+}
+
+.info-about__list {
+  @include reset-list-style();
+
+  width: 280px;
+  margin: 0 auto;
+}
+
+.info-about__item {
+  margin: 0 0 14px 0;
+  display: flex;
+  align-items: center;
+}
+
+.info-about__input-description {
+  margin: 0 15px 0 0;
+}
+
+.info-about__input {
+  margin: 0;
+}

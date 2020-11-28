@@ -2,14 +2,11 @@
 @import "./source/sass/mixin.scss";
 
 .social__list {
-  list-style: none;
-
-  @include indent-zero();
+  @include reset-list-style();
   display: flex;
 }
 
 .social__link {
   margin-left: 37px;
-  text-decoration: none;
   color: $black-color;
 }

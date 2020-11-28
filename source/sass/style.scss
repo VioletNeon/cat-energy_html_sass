@@ -1,3 +1,5 @@
+@import "./source/sass/fonts.scss";
+@import "./source/sass/global.scss";
 @import "./source/sass/variables.scss";
 @import "./source/sass/mixin.scss";
 @import "./source/sass/blocks/common-blocks/page.scss";
@@ -17,3 +19,14 @@
 @import "./source/sass/blocks/footer-blocks/page-footer.scss";
 @import "./source/sass/blocks/footer-blocks/social.scss";
 @import "./source/sass/blocks/footer-blocks/copyright.scss";
+@import "./source/sass/blocks/main-content-blocks/form-page-blocks/page-form.scss";
+@import "./source/sass/blocks/main-content-blocks/form-page-blocks/form-section.scss";
+@import "./source/sass/blocks/main-content-blocks/form-page-blocks/info-about.scss";
+@import "./source/sass/blocks/common-blocks/input-worksheet.scss";
+@import "./source/sass/blocks/common-blocks/text-worksheet.scss";
+@import "./source/sass/blocks/main-content-blocks/form-page-blocks/choose-program.scss";
+@import "./source/sass/blocks/main-content-blocks/form-page-blocks/data-contacts.scss";
+@import "./source/sass/blocks/common-blocks/form-title.scss";
+@import "./source/sass/blocks/main-content-blocks/form-page-blocks/leave-comment.scss";
+@import "./source/sass/blocks/main-content-blocks/form-page-blocks/additions.scss";
+@import "./source/sass/blocks/common-blocks/addition-checkbox.scss";

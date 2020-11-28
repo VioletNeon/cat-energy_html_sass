@@ -1,6 +1,12 @@
 @import "./source/sass/variables.scss";
 @import "./source/sass/mixin.scss";
 
+.address-section {
+  &--background {
+    background-color: $basic-gray-color;
+  }
+}
+
 .address-section__wrapper {
-  padding: 20px;
+  padding: 31px 20px 27px 20px;
 }

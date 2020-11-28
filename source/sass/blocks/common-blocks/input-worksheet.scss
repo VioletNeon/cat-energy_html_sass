@@ -1,0 +1,10 @@
+@import "./source/sass/variables.scss";
+@import "./source/sass/mixin.scss";
+
+.input-worksheet {
+  height: 45px;
+  width: 100%;
+  border: 1px solid $middle-light-gray-color;
+  box-sizing: border-box;
+  padding-left: 15px;
+}

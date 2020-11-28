@@ -3,7 +3,7 @@
 
 .title-in-catalog {
   @include font-special(400);
-  @include font-size(24px, 13);
+  @include font-size(24px, 37px);
   text-transform: uppercase;
   color: $black-color;
 }

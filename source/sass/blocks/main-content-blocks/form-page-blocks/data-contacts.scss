@@ -1,0 +1,37 @@
+@import "./source/sass/variables.scss";
+@import "./source/sass/mixin.scss";
+
+.data-contacts {
+  border-top: 2px solid $green-color;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  padding: 0;
+  margin: 30px 0 0 0;
+}
+
+.data-contacts__title {
+  position: relative;
+  top: 10px;
+}
+
+.data-contacts__list {
+  @include reset-list-style();
+
+  width: 280px;
+  margin: 35px auto 0 auto;
+}
+
+.data-contacts__item {
+  margin: 0 0 14px 0;
+  display: flex;
+  align-items: center;
+}
+
+.data-contacts__input-description {
+  margin: 0 15px 0 0;
+}
+
+.data-contacts__input {
+  margin: 0;
+}
