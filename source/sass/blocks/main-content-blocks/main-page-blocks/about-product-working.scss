@@ -12,9 +12,7 @@
 }
 
 .about-product-working__list {
-  list-style: none;
-
-  @include indent-zero();
+  @include reset-list-style();
 }
 
 .about-product-working__item {

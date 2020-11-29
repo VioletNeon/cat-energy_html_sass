@@ -1,0 +1,56 @@
+@import "./source/sass/variables.scss";
+@import "./source/sass/mixin.scss";
+
+.additions {
+  border-top: 2px solid $green-color;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  padding: 0;
+  margin: 30px 0 21px 0;
+}
+
+.additions__title {
+  position: relative;
+  bottom: 3px;
+}
+
+.additions__list {
+  @include reset-list-style();
+
+  width: 280px;
+  margin: 31px auto 0 auto;
+}
+
+.additions__item {
+  margin: 0 0 13px 0;
+}
+
+.additions__input-description {
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
+
+.additions__unchecked {
+  z-index: 2;
+  opacity: 1;
+  position: relative;
+  margin-right: 17px;
+}
+
+.additions__checked {
+  z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.additions__input:checked ~ .additions__input-description > .additions__checked {
+  z-index: 2;
+  opacity: 1;
+}
+
+.additions__input:checked ~ .additions__input-description > .additions__unchecked {
+  z-index: -1;
+  opacity: 0;
+}

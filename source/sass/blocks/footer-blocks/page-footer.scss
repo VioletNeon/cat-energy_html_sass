@@ -14,10 +14,10 @@
 
   @include position-zero();
   border-bottom: 1px solid $bright-gray-color;
+}
 
-  &-text {
-    position: absolute;
-  }
+.page-footer__logo-text {
+  position: absolute;
 }
 
 .page-footer__social {
