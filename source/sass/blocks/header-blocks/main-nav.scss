@@ -2,21 +2,18 @@
 @import "./source/sass/mixin.scss";
 
 .main-nav__list {
-  list-style: none;
-
-  @include indent-zero();
+  @include reset-list-style();
 }
 
 .main-nav__item {
   background-color: $white-color;
 
   @include font-special(500);
-  @include font-size(20px);
+  @include font-size(20px, 20px);
   padding: 35px 0 25px 0;
   position: relative;
 
   a {
-    text-decoration: none;
     color: $black-color;
     position: absolute;
 
@@ -25,5 +22,6 @@
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid $middle-gray-color;
+    text-transform: uppercase;
   }
 }

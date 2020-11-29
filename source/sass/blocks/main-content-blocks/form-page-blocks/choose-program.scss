@@ -1,0 +1,43 @@
+@import "./source/sass/variables.scss";
+@import "./source/sass/mixin.scss";
+
+.choose-program {
+  border: 1px solid $bright-gray-color;
+  padding: 20px 0 9px 0;
+}
+
+.choose-program__list {
+  @include reset-list-style();
+
+  width: 280px;
+  margin: 0 auto;
+}
+
+.choose-program__item {
+  margin: 0 0 13px 0;
+}
+
+.choose-program__input-description {
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
+
+.choose-program__input-description::before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid $gray-color;
+  border-radius: 50%;
+  margin-right: 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.choose-program__input:checked + .choose-program__input-description::before {
+  box-shadow: inset 0 0 0 6px $white-color, inset 0 0 0 15px $green-color;
+}

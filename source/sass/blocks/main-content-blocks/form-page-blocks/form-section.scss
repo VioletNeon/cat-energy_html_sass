@@ -1,0 +1,24 @@
+@import "./source/sass/variables.scss";
+@import "./source/sass/mixin.scss";
+
+.form-section__text {
+  margin: 0 auto 26px auto;
+  width: 280px;
+
+  @include font-special(400);
+  @include font-size(14px, 18px);
+}
+
+.form-section__button {
+  margin: 0 auto;
+  border: none;
+}
+
+.form-section__legend {
+  display: block;
+  text-align: center;
+  min-width: 280px;
+  padding: 23px 0 35px 0;
+
+  @include font-size(14px, 16px);
+}

@@ -3,14 +3,9 @@
   font-weight: $font-weight;
 }
 
-@mixin font-common($font-weight) {
-  font-family: "Arial", "Tahoma", sans-serif;
-  font-weight: $font-weight;
-}
-
-@mixin font-size($size, $add-number: 0) {
+@mixin font-size($size, $l-height) {
   font-size: $size;
-  line-height: $size + $add-number;
+  line-height: $l-height;
 }
 
 @mixin position-zero() {
@@ -20,7 +15,8 @@
   left: 0;
 }
 
-@mixin indent-zero() {
+@mixin reset-list-style() {
   padding: 0;
   margin: 0;
+  list-style: none;
 }

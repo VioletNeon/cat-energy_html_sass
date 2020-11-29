@@ -16,7 +16,6 @@
 
 .catalog-offer__link {
   @include font-special(400);
-  @include font-size(16px);
+  @include font-size(16px, 16px);
   color: $black-color;
-  text-decoration: none;
 }
