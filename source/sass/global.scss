@@ -1,8 +1,7 @@
-
-.page {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  font-family: "Arial", "Tahoma", sans-serif;
-  font-weight: 400;
 }
 
 a {
