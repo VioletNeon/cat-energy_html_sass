@@ -1,0 +1,99 @@
+@import "./source/sass/variables.scss";
+@import "./source/sass/mixin.scss";
+
+.additional-products {
+  border-top: 2px solid $green-color;
+  margin: 43px 0 0 0;
+  padding: 26px 0 35px 0;
+  position: relative;
+}
+
+.additional-products__title {
+  @include font-special(400);
+  @include font-size(24px, 24px);
+
+  color: $black-color;
+  padding-left: 20px;
+  padding-right: 22px;
+  width: max-content;
+  position: absolute;
+  top: -17px;
+  background-color: $white-color;
+  margin: 0;
+}
+
+.additional-products__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.additional-products__list {
+  @include reset-list-style();
+
+  margin: 0 0 40px 0;
+}
+
+.additional-products__item {
+  border-top: 1px solid $gray-color;
+  padding: 15px 0 18px 0;
+}
+
+.additional-products__item:last-child {
+  border-bottom: 1px solid $gray-color;
+}
+
+.additional-products__item-title {
+  @include font-special(400);
+  @include font-size(16px, 16px);
+
+  margin: 0;
+}
+
+.additional-products__packing {
+  margin: 0;
+  padding: 16px 0 14px 0;
+  display: flex;
+}
+
+.additional-products__packing-item {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.additional-products__packing-price {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.additional-products__promo {
+  background-image: url("../img/promo-gift-background.jpg");
+  min-width: 280px;
+  height: 289px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+
+.additional-products__promo-text {
+  @include font-size(16px, 20px);
+
+  color: $white-color;
+  width: 165px;
+  text-align: center;
+  margin: 0 0 43px 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 78px;
+    height: 80px;
+    bottom: 153px;
+    right: 105px;
+    background-image: url("../img/gift-promo-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}

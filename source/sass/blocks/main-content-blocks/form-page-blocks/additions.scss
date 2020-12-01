@@ -32,25 +32,24 @@
   width: max-content;
 }
 
-.additions__unchecked {
-  z-index: 2;
-  opacity: 1;
-  position: relative;
+.additions__input-description::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/check-box.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   margin-right: 17px;
 }
 
-.additions__checked {
-  z-index: -1;
-  opacity: 0;
+.additions__input:checked ~ .additions__input-description::after {
+  content: "";
   position: absolute;
-}
-
-.additions__input:checked ~ .additions__input-description > .additions__checked {
-  z-index: 2;
-  opacity: 1;
-}
-
-.additions__input:checked ~ .additions__input-description > .additions__unchecked {
-  z-index: -1;
-  opacity: 0;
+  left: 35px;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/mark-checked.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
