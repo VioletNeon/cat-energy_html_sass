@@ -1,0 +1,7 @@
+@import "./source/sass/variables.scss";
+@import "./source/sass/mixin.scss";
+
+.packing-text {
+  @include font-size(14px, 14px);
+  color: $special-dark-grey-color;
+}
