@@ -12,5 +12,29 @@
 
 .page__body {
   background-color: $white-color;
-  width: 320px;
+  min-width: 320px;
+
+  @media (min-width: $desktop-width) {
+    min-width: 1150px;
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    grid-template-rows: max-content min-content min-content;
+  }
+}
+
+.page-header__logo {
+  display: flex;
+  height: 66px;
+  align-items: center;
+}
+
+.page-header__logo-image {
+  position: absolute;
+  height: fit-content;
+  left: 30px;
+}
+
+.page-header__logo-text {
+  height: fit-content;
+  margin: 0 auto;
 }
