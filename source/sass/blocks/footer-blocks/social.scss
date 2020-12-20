@@ -4,9 +4,15 @@
 .social__list {
   @include reset-list-style();
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 125px;
+}
+
+.social__item {
+  width: min-content;
 }
 
 .social__link {
-  margin-left: 37px;
   color: $black-color;
 }
