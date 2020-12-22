@@ -7,10 +7,15 @@
   align-items: center;
   justify-content: center;
   padding: 15px 0 12px 0;
-  min-width: 280px;
   color: $white-color;
 
   @include font-size(14px, 18px);
   @include font-special(400);
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    @include font-size(20px, 20px);
+  }
 }
