@@ -8,6 +8,13 @@
   border-left: none;
   padding: 0;
   margin: 17px 0 0 0;
+  outline: 5px solid rgba(255, 255, 0, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0 30px 0 30px;
+  }
 }
 
 .leave-comment__title {
@@ -16,9 +23,15 @@
 }
 
 .leave-comment__wrapper {
-  width: 280px;
-  margin: 31px auto 0 auto;
+  min-width: 280px;
+  margin: 31px 20px 0 20px;
   padding: 0;
+  outline: 5px solid rgba(255, 0, 255, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: $tablet-width) {
+    margin: 71px 40px 70px 40px;
+  }
 }
 
 .leave-comment__field {
@@ -28,4 +41,9 @@
   height: 150px;
   border: 1px solid $middle-light-gray-color;
   padding: 13px;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 19px 17px 19px;
+    height: 174px;
+  }
 }

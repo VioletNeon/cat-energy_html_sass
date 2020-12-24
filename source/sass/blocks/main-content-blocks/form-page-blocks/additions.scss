@@ -8,28 +8,59 @@
   border-left: none;
   padding: 0;
   margin: 30px 0 21px 0;
+  outline: 5px solid rgba(0, 0, 255, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0 30px 0 30px;
+  }
 }
 
 .additions__title {
   position: relative;
   bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 5px;
+  }
 }
 
 .additions__list {
   @include reset-list-style();
 
-  width: 280px;
-  margin: 31px auto 0 auto;
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+  min-width: 280px;
+  margin: 31px 20px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 53px 40px 22px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 60px;
+  }
 }
 
 .additions__item {
   margin: 0 0 13px 0;
+  outline: 5px solid rgba(0, 0, 255, 0.8);
+  outline-offset: -5px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 32px 0;
+    min-width: 276px;
+  }
 }
 
 .additions__input-description {
   display: flex;
   align-items: center;
   width: max-content;
+  outline: 5px solid rgba(0, 255, 255, 0.8);
+  outline-offset: -5px;
 }
 
 .additions__input-description::before {
@@ -41,15 +72,25 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   margin-right: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
 }
 
 .additions__input:checked ~ .additions__input-description::after {
   content: "";
   position: absolute;
-  left: 35px;
+  left: 7px;
   width: 18px;
   height: 14px;
   background-image: url("../img/mark-checked.svg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+
+  @media (min-width: $tablet-width) {
+    left: 13px;
+  }
 }

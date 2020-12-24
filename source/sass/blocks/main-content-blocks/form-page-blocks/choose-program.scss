@@ -4,13 +4,26 @@
 .choose-program {
   border: 1px solid $bright-gray-color;
   padding: 20px 0 9px 0;
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 28px 12px 28px;
+    margin: 0 70px 0 70px;
+  }
 }
 
 .choose-program__list {
   @include reset-list-style();
+  outline: 5px solid rgba(0, 255, 255, 0.8);
+  outline-offset: -5px;
 
-  width: 280px;
-  margin: 0 auto;
+  min-width: 280px;
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .choose-program__item {
@@ -36,8 +49,18 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    margin-right: 21px;
+  }
 }
 
 .choose-program__input:checked + .choose-program__input-description::before {
   box-shadow: inset 0 0 0 6px $white-color, inset 0 0 0 15px $green-color;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: inset 0 0 0 10px $white-color, inset 0 0 0 30px $green-color;
+  }
 }

@@ -8,28 +8,57 @@
   border-left: none;
   padding: 0;
   margin: 30px 0 0 0;
+  outline: 5px solid rgba(255, 255, 0, 0.8);
+  outline-offset: -5px;
+
+  @media (min-width: $tablet-width) {
+    margin: 75px 0 0 0;
+    padding: 0 30px 0 30px;
+  }
 }
 
 .data-contacts__title {
   position: relative;
   top: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 43px;
+    width: max-content;
+    top: -5px;
+  }
 }
 
 .data-contacts__list {
   @include reset-list-style();
 
-  width: 280px;
-  margin: 35px auto 0 auto;
+  outline: 5px solid rgba(0, 0, 255, 0.8);
+  outline-offset: -5px;
+  min-width: 280px;
+  margin: 35px 20px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 75px 40px 70px 40px;
+  }
 }
 
 .data-contacts__item {
   margin: 0 0 14px 0;
   display: flex;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 20px 0;
+  }
+
 }
 
 .data-contacts__input-description {
   margin: 0 15px 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 19px 0 0;
+  }
 }
 
 .data-contacts__input {
