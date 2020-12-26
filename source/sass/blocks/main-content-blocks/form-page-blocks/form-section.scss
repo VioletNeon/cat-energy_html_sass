@@ -1,17 +1,56 @@
 @import "./source/sass/variables.scss";
 @import "./source/sass/mixin.scss";
 
+.form-section {
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    padding: 0 0 72px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 82px 0;
+  }
+}
+
+.form-section__wrapper {
+  position: relative;
+}
+
 .form-section__text {
-  margin: 0 auto 26px auto;
+  margin: 0 20px 26px 20px;
   width: 280px;
 
   @include font-special(400);
   @include font-size(14px, 18px);
+
+  @media (min-width: $tablet-width) {
+    width: 325px;
+    margin: 0 0 0 70px;
+
+    @include font-size(20px, 30px);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 110px;
+  }
 }
 
 .form-section__button {
+  width: 90%;
   margin: 0 auto;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 276px;
+    margin: 0 0 0 70px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 110px;
+    width: 568px;
+  }
 }
 
 .form-section__legend {
@@ -21,4 +60,20 @@
   padding: 23px 0 35px 0;
 
   @include font-size(14px, 16px);
+
+  @media (min-width: $tablet-width) {
+    width: 276px;
+    position: absolute;
+    left: 406px;
+    bottom: 0;
+    text-align: left;
+    padding: 17px 0 22px 0;
+
+    @include font-size(16px, 16px);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 110px;
+    left: 642px;
+  }
 }

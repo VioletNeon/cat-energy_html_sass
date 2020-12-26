@@ -17,6 +17,12 @@
   }
 }
 
+.page-header__logo {
+  display: flex;
+  height: 66px;
+  align-items: center;
+}
+
 .page-header__logo-tablet {
   display: none;
 
@@ -31,12 +37,19 @@
 }
 
 .page-header__logo-image {
+  position: absolute;
+  height: fit-content;
+  left: 30px;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
 .page-header__logo-text {
+  height: fit-content;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
