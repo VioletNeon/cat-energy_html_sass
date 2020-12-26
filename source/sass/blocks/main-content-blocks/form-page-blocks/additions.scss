@@ -8,22 +8,59 @@
   border-left: none;
   padding: 0;
   margin: 30px 0 21px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0 30px 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 70px 0 70px;
+  }
 }
 
 .additions__title {
   position: relative;
   bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 5px;
+  }
 }
 
 .additions__list {
   @include reset-list-style();
 
-  width: 280px;
-  margin: 31px auto 0 auto;
+  min-width: 280px;
+  margin: 31px 20px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 53px 40px 54px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 60px;
+    row-gap: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 80px;
+    margin: 53px 40px 61px 40px;
+  }
 }
 
 .additions__item {
   margin: 0 0 13px 0;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    min-width: 276px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 241px;
+  }
 }
 
 .additions__input-description {
@@ -41,15 +78,25 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   margin-right: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
 }
 
 .additions__input:checked ~ .additions__input-description::after {
   content: "";
   position: absolute;
-  left: 35px;
+  left: 7px;
   width: 18px;
   height: 14px;
   background-image: url("../img/mark-checked.svg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+
+  @media (min-width: $tablet-width) {
+    left: 13px;
+  }
 }

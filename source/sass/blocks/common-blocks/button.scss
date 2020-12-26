@@ -8,10 +8,10 @@
   justify-content: center;
   padding: 15px 0 12px 0;
   color: $white-color;
+  text-transform: uppercase;
 
   @include font-size(14px, 18px);
   @include font-special(400);
-  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     padding: 0;
