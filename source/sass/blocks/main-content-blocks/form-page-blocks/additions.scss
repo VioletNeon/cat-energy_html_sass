@@ -8,12 +8,14 @@
   border-left: none;
   padding: 0;
   margin: 30px 0 21px 0;
-  outline: 5px solid rgba(0, 0, 255, 0.8);
-  outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
     padding: 0 30px 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 70px 0 70px;
   }
 }
 
@@ -29,29 +31,35 @@
 .additions__list {
   @include reset-list-style();
 
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
   min-width: 280px;
   margin: 31px 20px 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 53px 40px 22px 40px;
+    margin: 53px 40px 54px 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     column-gap: 60px;
+    row-gap: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 80px;
+    margin: 53px 40px 61px 40px;
   }
 }
 
 .additions__item {
   margin: 0 0 13px 0;
-  outline: 5px solid rgba(0, 0, 255, 0.8);
-  outline-offset: -5px;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 32px 0;
+    margin: 0;
     min-width: 276px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 241px;
   }
 }
 
@@ -59,8 +67,6 @@
   display: flex;
   align-items: center;
   width: max-content;
-  outline: 5px solid rgba(0, 255, 255, 0.8);
-  outline-offset: -5px;
 }
 
 .additions__input-description::before {

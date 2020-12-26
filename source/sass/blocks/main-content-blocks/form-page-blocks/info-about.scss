@@ -4,24 +4,32 @@
 .info-about {
   border: none;
   padding: 14px 20px 10px 20px;
-  outline: 5px solid rgba(0, 0, 255, 0.8);
-  outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
     padding: 69px 30px 72px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
   }
 }
 
 .info-about__list {
   @include reset-list-style();
 
-  outline: 5px solid rgba(255, 0, 255, 0.8);
-  outline-offset: -5px;
   min-width: 280px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding: 0 40px 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    min-width: 561px;
+    margin: 0;
   }
 }
 
@@ -29,11 +37,15 @@
   margin: 0 0 14px 0;
   display: flex;
   align-items: center;
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 20px 0;
+  }
+
+  &:last-child {
+    @media (min-width: $desktop-width) {
+      margin: 0;
+    }
   }
 }
 

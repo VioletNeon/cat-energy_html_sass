@@ -1,0 +1,13 @@
+@import "./source/sass/variables.scss";
+@import "./source/sass/mixin.scss";
+
+.form__wrapper {
+  @media (min-width: $desktop-width) {
+    padding: 69px 110px 72px 110px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 80px;
+    row-gap: 40px;
+    margin: 0;
+  }
+}

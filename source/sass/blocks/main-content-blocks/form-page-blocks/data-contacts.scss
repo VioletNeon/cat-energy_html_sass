@@ -8,12 +8,15 @@
   border-left: none;
   padding: 0;
   margin: 30px 0 0 0;
-  outline: 5px solid rgba(255, 255, 0, 0.8);
-  outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
     margin: 75px 0 0 0;
     padding: 0 30px 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 70px 0 70px;
+    margin: 0;
   }
 }
 
@@ -23,7 +26,7 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 40px;
-    padding-right: 43px;
+    padding-right: 42px;
     width: max-content;
     top: -5px;
   }
@@ -32,12 +35,18 @@
 .data-contacts__list {
   @include reset-list-style();
 
-  outline: 5px solid rgba(0, 0, 255, 0.8);
-  outline-offset: -5px;
   min-width: 280px;
   margin: 35px 20px 0 20px;
 
   @media (min-width: $tablet-width) {
+    margin: 75px 40px 70px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 80px;
+    row-gap: 40px;
     margin: 75px 40px 70px 40px;
   }
 }
@@ -51,13 +60,18 @@
     margin: 0 0 20px 0;
   }
 
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    flex-grow: 1;
+    min-width: 561px;
+  }
 }
 
 .data-contacts__input-description {
   margin: 0 15px 0 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 19px 0 0;
+    margin: 0 17px 0 0;
   }
 }
 

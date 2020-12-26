@@ -15,7 +15,6 @@
   min-width: 320px;
 
   @media (min-width: $desktop-width) {
-    min-width: 1150px;
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     grid-template-rows: max-content min-content min-content;

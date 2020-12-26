@@ -2,9 +2,6 @@
 @import "./source/sass/mixin.scss";
 
 .form-section {
-  outline: 5px solid rgba(255, 0, 255, 0.8);
-  outline-offset: -5px;
-
   @media (min-width: $tablet-width) {
     grid-column: 1 / 4;
     grid-row: 2 / 3;
@@ -17,16 +14,12 @@
 }
 
 .form-section__wrapper {
-  outline: 5px solid rgba(0, 0, 255, 0.8);
-  outline-offset: -5px;
   position: relative;
 }
 
 .form-section__text {
   margin: 0 20px 26px 20px;
   width: 280px;
-  outline: 5px solid rgba(255, 255, 0, 0.8);
-  outline-offset: -5px;
 
   @include font-special(400);
   @include font-size(14px, 18px);
@@ -44,8 +37,6 @@
 }
 
 .form-section__button {
-  outline: 5px solid rgba(255, 255, 0, 0.8);
-  outline-offset: -5px;
   width: 90%;
   margin: 0 auto;
   border: none;
@@ -55,6 +46,11 @@
     margin: 0 0 0 70px;
     height: 52px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 110px;
+    width: 568px;
+  }
 }
 
 .form-section__legend {
@@ -62,8 +58,6 @@
   text-align: center;
   min-width: 280px;
   padding: 23px 0 35px 0;
-  outline: 5px solid rgba(0, 255, 255, 0.8);
-  outline-offset: -5px;
 
   @include font-size(14px, 16px);
 
@@ -76,5 +70,10 @@
     padding: 17px 0 22px 0;
 
     @include font-size(16px, 16px);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 110px;
+    left: 642px;
   }
 }

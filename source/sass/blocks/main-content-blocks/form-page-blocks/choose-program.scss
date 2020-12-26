@@ -2,21 +2,29 @@
 @import "./source/sass/mixin.scss";
 
 .choose-program {
-  border: 1px solid $bright-gray-color;
+  border-top: 1px solid $bright-gray-color;
+  border-bottom: 1px solid $bright-gray-color;
+  border-right: none;
+  border-left: none;
   padding: 20px 0 9px 0;
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
     padding: 25px 28px 12px 28px;
     margin: 0 70px 0 70px;
+    border: 1px solid $bright-gray-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 0 28px;
+    margin: 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
   }
 }
 
 .choose-program__list {
   @include reset-list-style();
-  outline: 5px solid rgba(0, 255, 255, 0.8);
-  outline-offset: -5px;
 
   min-width: 280px;
   margin: 0 20px;
@@ -24,10 +32,21 @@
   @media (min-width: $tablet-width) {
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 24px 0 24px 0;
+    min-width: 533px;
+  }
 }
 
 .choose-program__item {
   margin: 0 0 13px 0;
+
+  &:last-child {
+    @media (min-width: $desktop-width) {
+      margin: 0;
+    }
+  }
 }
 
 .choose-program__input-description {

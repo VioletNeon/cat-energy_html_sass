@@ -40,40 +40,42 @@
       <h2 class="visually-hidden">Анкета</h2>
       <p class="form-section__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="form" method="post" action="https://echo.htmlacademy.ru/" target="_blank">
-        <fieldset class="info-about">
-          <legend class="visually-hidden">Введите данные Вашего кота</legend>
-          <ul class="info-about__list">
-            <li class="info-about__item">
-              <label class="info-about__input-description text-worksheet" for="cat-name" tabindex="0">Имя:*</label>
-              <input class="info-about__input input-worksheet text-worksheet" type="text" name="name" value="" placeholder="Барсик" id="cat-name">
-            </li>
-            <li class="info-about__item">
-              <label class="info-about__input-description text-worksheet" for="cat-weight" tabindex="0">Вес&nbsp;(кг):*</label>
-              <input class="info-about__input input-worksheet text-worksheet" type="text" name="weight" value="" placeholder="7" id="cat-weight">
-            </li>
-            <li class="info-about__item">
-              <label class="info-about__input-description text-worksheet" for="cat-age" tabindex="0">Возраст&nbsp;(лет):</label>
-              <input class="info-about__input input-worksheet text-worksheet" type="text" name="age" value="" placeholder="7" id="cat-age">
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="choose-program">
-          <legend class="visually-hidden">Выберете программу</legend>
-          <ul class="choose-program__list">
-            <li class="choose-program__item">
-              <input class="choose-program__input visually-hidden" type="radio" name="type-program" value="Похудение" id="slimming" checked>
-              <label class="choose-program__input-description text-worksheet" for="slimming" tabindex="0">Похудение</label>
-            </li>
-            <li class="choose-program__item">
-              <input class="choose-program__input visually-hidden" type="radio" name="type-program" value="Набор массы" id="gain-weight">
-              <label class="choose-program__input-description text-worksheet" for="gain-weight" tabindex="0">Набор массы</label>
-            </li>
-            <li class="choose-program__item">
-              <input class="choose-program__input visually-hidden" type="radio" name="type-program" value="Не знаю (нужен Ваш совет)" id="get-advice">
-              <label class="choose-program__input-description text-worksheet" for="get-advice" tabindex="0">Не знаю (нужен Ваш совет)</label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="form__wrapper">
+          <fieldset class="info-about">
+            <legend class="visually-hidden">Введите данные Вашего кота</legend>
+            <ul class="info-about__list">
+              <li class="info-about__item">
+                <label class="info-about__input-description text-worksheet" for="cat-name" tabindex="0">Имя:*</label>
+                <input class="info-about__input input-worksheet text-worksheet" type="text" name="name" value="" placeholder="Барсик" id="cat-name">
+              </li>
+              <li class="info-about__item">
+                <label class="info-about__input-description text-worksheet" for="cat-weight" tabindex="0">Вес&nbsp;(кг):*</label>
+                <input class="info-about__input input-worksheet text-worksheet" type="text" name="weight" value="" placeholder="7" id="cat-weight">
+              </li>
+              <li class="info-about__item">
+                <label class="info-about__input-description text-worksheet" for="cat-age" tabindex="0">Возраст&nbsp;(лет):</label>
+                <input class="info-about__input input-worksheet text-worksheet" type="text" name="age" value="" placeholder="7" id="cat-age">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="choose-program">
+            <legend class="visually-hidden">Выберете программу</legend>
+            <ul class="choose-program__list">
+              <li class="choose-program__item">
+                <input class="choose-program__input visually-hidden" type="radio" name="type-program" value="Похудение" id="slimming" checked>
+                <label class="choose-program__input-description text-worksheet" for="slimming" tabindex="0">Похудение</label>
+              </li>
+              <li class="choose-program__item">
+                <input class="choose-program__input visually-hidden" type="radio" name="type-program" value="Набор массы" id="gain-weight">
+                <label class="choose-program__input-description text-worksheet" for="gain-weight" tabindex="0">Набор массы</label>
+              </li>
+              <li class="choose-program__item">
+                <input class="choose-program__input visually-hidden" type="radio" name="type-program" value="Не знаю (нужен Ваш совет)" id="get-advice">
+                <label class="choose-program__input-description text-worksheet" for="get-advice" tabindex="0">Не знаю (нужен Ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="data-contacts">
           <legend class="data-contacts__title form-title">Контактные&nbsp;данные (владельца&nbsp;кота)</legend>
           <ul class="data-contacts__list">
