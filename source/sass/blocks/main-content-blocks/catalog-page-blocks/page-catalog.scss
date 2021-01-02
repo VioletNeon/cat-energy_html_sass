@@ -8,4 +8,8 @@
 
   @include font-special(400);
   @include font-size(36px, 36px);
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 30px 52px 30px;
+  }
 }
