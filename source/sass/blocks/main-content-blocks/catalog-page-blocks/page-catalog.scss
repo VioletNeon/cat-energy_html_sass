@@ -1,6 +1,13 @@
 @import "./source/sass/variables.scss";
 @import "./source/sass/mixin.scss";
 
+.page-catalog {
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+  }
+}
+
 .page-catalog__title {
   color: $black-color;
   margin: 0;
@@ -11,5 +18,9 @@
 
   @media (min-width: $tablet-width) {
     padding: 50px 30px 52px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 110px 87px 110px;
   }
 }
