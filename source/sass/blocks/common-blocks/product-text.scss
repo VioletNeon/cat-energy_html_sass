@@ -5,4 +5,8 @@
   @include font-size(12px, 16px);
 
   color: $special-dark-grey-color;
+
+  @media (min-width: $tablet-width) {
+    @include font-size(16px, 16px);
+  }
 }
