@@ -10,6 +10,14 @@
   color: $white-color;
   text-transform: uppercase;
 
+  &:hover {
+    background-color: $green-color-active;
+  }
+
+  &:active {
+    color: $opacity-white-color;
+  }
+
   @include font-size(14px, 18px);
   @include font-special(400);
 

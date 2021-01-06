@@ -15,4 +15,13 @@
 
 .social__link {
   color: $black-color;
+
+  &:hover .social__link-logo {
+    stroke: $green-color;
+  }
+
+  &:active {
+    stroke: $green-color;
+    opacity: 0.4;
+  }
 }
