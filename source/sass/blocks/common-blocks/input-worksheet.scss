@@ -6,10 +6,51 @@
   width: 100%;
   border: 1px solid $middle-light-gray-color;
   box-sizing: border-box;
-  padding-left: 15px;
+  padding-left: 12px;
 
   @media (min-width: $tablet-width) {
     height: 52px;
     padding-left: 20px;
   }
+
+  &:focus {
+    outline: 2px solid $special-dark-grey-color;
+    border: 1px solid $special-dark-grey-color;
+  }
+
+  &:invalid {
+    outline: 2px solid $red-color;
+    border: 1px solid $red-color;
+  }
+
+  &:disabled {
+    outline: 2px solid $special-dark-grey-color;
+    border: 1px solid $special-dark-grey-color;
+  }
+
+  &:invalid ~ .input-worksheet__icon-email path {
+    stroke: $red-color;
+  }
+
+  &:disabled ~ .input-worksheet__icon-email path {
+    stroke: $green-color;
+  }
+
+  &:invalid ~ .input-worksheet__icon-telephone g {
+    fill: $red-color;
+  }
+
+  &:disabled ~ .input-worksheet__icon-telephone path {
+    fill: $green-color;
+  }
+}
+
+.input-worksheet__icon-email {
+  position: absolute;
+  right: 15px;
+}
+
+.input-worksheet__icon-telephone {
+  position: absolute;
+  right: 12px;
 }
