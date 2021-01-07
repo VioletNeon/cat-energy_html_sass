@@ -14,7 +14,7 @@
     <img class="page-header__logo-tablet" src="./img/logo-cat-energy-tablet.svg" width="174" height="52" alt="Кэт энерджи">
     <img class="page-header__logo-desktop" src="./img/logo-cat-energy-desktop.svg" width="202" height="59" alt="Кэт энерджи">
   </a>
-  <nav class="main-nav">
+  <nav class="main-nav main-nav--opened main-nav--nojs">
     <button class="main-nav__toggle" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
@@ -319,5 +319,21 @@
     </div>
   </div>
 </footer>
+<script>
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+</script>
 </body>
 </html>
