@@ -55,6 +55,24 @@
   width: max-content;
 }
 
+.choose-program__input {
+  &:hover ~ .choose-program__input-description {
+    &::before {
+      border: 1px solid $gray-color-hover;
+    }
+  }
+
+  &:disabled ~ .choose-program__input-description {
+    opacity: 0.3;
+    outline: none;
+
+    &::before {
+      opacity: 0.3;
+      outline: none;
+    }
+  }
+}
+
 .choose-program__input-description::before {
   content: "";
   display: block;
@@ -78,6 +96,7 @@
 
 .choose-program__input:checked + .choose-program__input-description::before {
   box-shadow: inset 0 0 0 6px $white-color, inset 0 0 0 15px $green-color;
+
 
   @media (min-width: $tablet-width) {
     box-shadow: inset 0 0 0 10px $white-color, inset 0 0 0 30px $green-color;

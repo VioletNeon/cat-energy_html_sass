@@ -167,6 +167,17 @@
     height: 2px;
     background-color: $black-color;
     box-shadow: 0 8px 0 0 $black-color, 0 16px 0 0 $black-color;
+    transform: rotate(0deg);
+  }
+
+  &::before {
+    content: "";
+    transform: rotate(0deg);
+    position: absolute;
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    top: 0;
   }
 
   @media (min-width: $tablet-width) {
