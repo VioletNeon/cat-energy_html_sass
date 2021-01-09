@@ -119,7 +119,17 @@
   }
 }
 
-.main-nav__toggle {
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
   position: absolute;
   background-color: transparent;
   border: 0;
