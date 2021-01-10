@@ -113,6 +113,20 @@
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
+
+  .main-nav--nojs .main-nav__item {
+    display: block;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {
