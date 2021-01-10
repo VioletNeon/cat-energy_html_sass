@@ -36,11 +36,41 @@
       border: none;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    &--active::after {
+      content: "";
+      position: absolute;
+      background-color: $green-color;
+      height: 2px;
+      width: 100%;
+      margin-top: 7px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--active-index-desktop::after {
+      background-color: $white-color;
+    }
+  }
+
+  &--active .main-nav__link {
+    cursor: unset;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+  }
 }
 
 .main-nav__link {
   color: $black-color;
   position: absolute;
+  cursor: pointer;
 
   @include position-zero();
   display: flex;
@@ -60,21 +90,53 @@
     @include font-size(20px, 30px);
   }
 
-  &--text-color {
-    @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
+    &--text-color {
       color: $white-color;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 }
 
-.main-nav__toggle {
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__item {
+    display: block;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
   position: absolute;
   background-color: transparent;
   border: 0;
   cursor: pointer;
-  left: 88%;
+  right: 25px;
   outline: none;
-  top: -20%;
+  top: -34px;
 
   &::before,
   &::after {
@@ -92,6 +154,44 @@
 
   &::before {
     transform: rotate(45deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  position: absolute;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  right: 21px;
+  outline: none;
+  top: -42px;
+  width: 35px;
+  height: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $black-color;
+    box-shadow: 0 8px 0 0 $black-color, 0 16px 0 0 $black-color;
+    transform: rotate(0deg);
+  }
+
+  &::before {
+    content: "";
+    transform: rotate(0deg);
+    position: absolute;
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    top: 0;
   }
 
   @media (min-width: $tablet-width) {
