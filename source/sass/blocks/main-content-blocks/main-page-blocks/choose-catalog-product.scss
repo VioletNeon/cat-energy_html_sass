@@ -12,7 +12,8 @@
   @media (min-width: $desktop-width) {
     grid-column: 1 / 4;
     grid-row: 3 / 4;
-    margin: 82px 0 0 0;
+    margin: 82px auto 0 auto;
+    max-width: 1440px;
     box-sizing: border-box;
   }
 }

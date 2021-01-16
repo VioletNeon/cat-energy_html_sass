@@ -9,4 +9,9 @@
     @include font-size(16px, 24px);
     color: $black-color;
   }
+
+  @media (min-width: $desktop-width) {
+    @include font-size(16px, 24px);
+    color: $special-dark-grey-color;
+  }
 }

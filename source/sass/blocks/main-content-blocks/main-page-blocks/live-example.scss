@@ -9,7 +9,7 @@
     grid-column: 1 / 4;
     grid-row: 5 / 6;
     padding: 0 30px 33px 30px;
-    background-image: linear-gradient($white-color 65%, $light-gray-color 35%);
+    background-image: linear-gradient($white-color 58.5%, $light-gray-color 42.5%);
   }
 
   @media (min-width: $desktop-width) {
@@ -37,6 +37,8 @@
     grid-template-rows: min-content min-content min-content min-content;
     column-gap: 80px;
     padding: 0 0 68px 0;
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -53,7 +55,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 1 / 3;
     grid-row: 1 / 2;
-    padding: 78px 0 67px 0;
+    padding: 78px 0 47px 0;
   }
 }
 
@@ -69,7 +71,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
-    padding: 76px 170px 0 0;
+    padding: 86px 135px 0 0;
   }
 }
 
@@ -155,6 +157,7 @@
 
   @media (min-width: $desktop-width) {
     background-color: $light-gray-color;
+    color: $special-dark-grey-color;
   }
 }
 
@@ -207,10 +210,11 @@
     grid-column: 1 / 4;
     grid-row: 4 / 7;
     padding: 0 0 40px 0;
+    display: flex;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 3 / 5;
+    grid-column: 2 / 5;
     grid-row: 1 / 5;
     padding: 0;
   }
@@ -222,11 +226,75 @@
 }
 
 .live-example__image--before {
-  z-index: 2;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    max-width: 354px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 364px;
+  }
 }
 
 .live-example__image--after {
   z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    max-width: 354px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 283px;
+  }
+}
+
+.live-example__image-before {
+  width: 311px;
+  height: 232px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    left: 15px;
+    width: 677px;
+    height: 520px;
+    object-fit: cover;
+    object-position: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 15px;
+    left: 0;
+    width: 683px;
+    height: 520px;
+  }
+}
+
+.live-example__image-after {
+  width: 251px;
+  height: 240px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    object-position: right;
+    right: 57px;
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 15px;
+    right: 13px;
+    height: 520px;
+    width: 530px;
+  }
 }
 
 .live-example__bar-box {
@@ -237,7 +305,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 40px auto 0 auto;
-    width: 570px;
+    width: 100%;
     grid-column: 1 / 4;
     grid-row: 6 / 7;
   }
@@ -317,5 +385,10 @@
     &:active {
       box-shadow: 0 0 0 1px $green-color, 0 4px 3px 0 $special-opacity-dark-grey-color;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 187px;
+    bottom: -15px;
   }
 }
