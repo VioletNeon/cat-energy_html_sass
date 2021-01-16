@@ -9,10 +9,12 @@
 <body class="page__body">
 <header class="page-header">
   <a class="page-header__logo">
-    <img class="page-header__logo-image" src="./img/logo-cat.svg" width="33" height="37" alt="Кэт энерджи">
+    <picture>
+      <source media="(min-width: 1440px)" srcset="./img/logo-cat-energy-desktop.svg">
+      <source media="(min-width: 768px)" srcset="./img/logo-cat-energy-tablet.svg">
+      <img class="page-header__logo-image" src="./img/logo-cat.svg" alt="Кэт энерджи">
+    </picture>
     <img class="page-header__logo-text logo-text" src="./img/word-logo.svg" width="101" height="18" alt="Кэт энерджи">
-    <img class="page-header__logo-tablet" src="./img/logo-cat-energy-tablet.svg" width="174" height="52" alt="Кэт энерджи">
-    <img class="page-header__logo-desktop" src="./img/logo-cat-energy-desktop.svg" width="202" height="59" alt="Кэт энерджи">
   </a>
   <nav class="main-nav main-nav--closed main-nav--nojs">
     <button class="main-nav__toggle" type="button">
@@ -39,10 +41,12 @@
     <div class="make-program__wrapper">
       <h2 class="visually-hidden">Подбор программы</h2>
       <p class="make-program__text">Занялся собой? Займись котом!</p>
-      <img class="make-program__image" src="./img/cat-energy-pro-chicken.png" srcset="img/cat-energy-pro-chicken@2x.png 2x" width="280" height="270" alt="Кэт энерджи">
+      <img class="make-program__image" src="./img/cat-energy-pro-chicken@1x.png" srcset="img/cat-energy-pro-chicken@2x.png" width="280" height="270" alt="Кэт энерджи">
     </div>
-    <img class="make-program__image-tablet" src="./img/cat-energy-tablet-presentation.jpg" srcset="img/cat-energy-tablet-presentation@2x.jpg 2x" width="709" height="609" alt="Кэт энерджи">
-    <img class="make-program__image-desktop" src="./img/cat-energy-desktop-presentation.png" srcset="img/cat-energy-desktop-presentation@2x.png 2x" width="552" height="499" alt="Кэт энерджи">
+    <picture class="make-program__image-container">
+      <source media="(min-width: 1440px)" srcset="./img/cat-energy-desktop-presentation@1x.png, img/cat-energy-desktop-presentation@2x.png">
+      <img class="make-program__image-tablet" src="./img/cat-energy-tablet-presentation@1x.jpg" srcset="img/cat-energy-tablet-presentation@2x.jpg" alt="Кэт энерджи">
+    </picture>
     <a class="make-program__button button" href="form.html">Подобрать программу</a>
   </section>
   <section class="choose-catalog-product">
@@ -115,12 +119,16 @@
       </dl>
       <ul class="live-example__images slider-list">
         <li class="live-example__image live-example__image--before slider__item">
-          <img class="live-example__image-mobile-before" src="./img/cat-before.png" srcset="./img/cat-before@2x.png 2x" width="311" height="232" alt="Изображение упитанного кота - до">
-          <img class="live-example__image-tablet-before" src="./img/cat-before-tablet.png" srcset="./img/cat-before-tablet@2x.png 2x" width="677" height="520" alt="Изображение упитанного кота - до">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./img/cat-before-tablet@1x.png, ./img/cat-before-tablet@2x.png">
+            <img class="live-example__image-before" src="./img/cat-before@1x.png" srcset="./img/cat-before@2x.png" alt="Изображение упитанного кота - до">
+          </picture>
         </li>
         <li class="live-example__image live-example__image--after slider__item">
-          <img class="live-example__image-mobile-after" src="./img/cat-after.png" srcset="./img/cat-after@2x.png 2x" width="251" height="240" alt="Изображение похудевшего кота - после">
-          <img class="live-example__image-tablet-after" src="./img/cat-after-tablet.png" srcset="./img/cat-after-tablet@2x.png 2x" width="545" height="520" alt="Изображение похудевшего кота - после">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./img/cat-after-tablet@1x.png, ./img/cat-after-tablet@2x.png">
+            <img class="live-example__image-after" src="./img/cat-after@1x.png" srcset="./img/cat-after-tablet@2x.png" alt="Изображение похудевшего кота - после">
+          </picture>
         </li>
       </ul>
       <div class="live-example__bar-box">
@@ -133,18 +141,22 @@
     </div>
   </section>
   <section class="address-section">
-    <div class="address-section__wrapper">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <div class="invent">
-        <p class="invent__text">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="invent__address text">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span>Санкт-Петербург</span></p>
+    <div class="address-section__container">
+      <div class="address-section__wrapper">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <div class="invent">
+          <p class="invent__text">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="invent__address text">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span>Санкт-Петербург</span></p>
+        </div>
       </div>
     </div>
     <div class="address-section__map">
       <a class="address-section__map-link" href="">
-        <img class="address-section__image-map" src="./img/location-map.jpg" srcset="./img/location-map@2x.jpg" width="320" height="362" alt="Месторасположение на карте - ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-        <img class="address-section__image-map-tablet" src="./img/location-map-tablet.jpg" srcset="./img/location-map-tablet@2x.jpg" width="768" height="400" alt="Месторасположение на карте - ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-        <img class="address-section__image-map-desktop" src="./img/location-map-desktop.jpg" srcset="./img/location-map-desktop@2x.jpg" width="1440" height="400" alt="Месторасположение на карте - ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./img/location-map-desktop@1x.jpg, ./img/location-map-desktop@2x.jpg">
+          <source media="(min-width: 768px)" srcset="./img/location-map-tablet@1x.jpg, ./img/location-map-tablet@2x.jpg">
+          <img class="address-section__image-map" src="./img/location-map@1x.jpg" srcset="./img/location-map@2x.jpg" alt="Месторасположение на карте - ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        </picture>
       </a>
     </div>
   </section>
