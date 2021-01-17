@@ -17,6 +17,13 @@
   position: relative;
 }
 
+.form-section__text-wrapper {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+}
+
 .form-section__text {
   margin: 0 20px 26px 20px;
   width: 280px;
@@ -33,6 +40,14 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 0 110px;
+  }
+}
+
+.form-section__wrapper-button {
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
   }
 }
 
@@ -73,7 +88,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 0 110px;
-    left: 642px;
+    position: static;
+    margin: 0 0 0 80px;
   }
 }
