@@ -40,7 +40,9 @@
   <section class="form-section">
     <div class="form-section__wrapper">
       <h2 class="visually-hidden">Анкета</h2>
-      <p class="form-section__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <div class="form-section__text-wrapper">
+        <p class="form-section__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      </div>
       <form class="form" method="post" action="https://echo.htmlacademy.ru/" target="_blank">
         <div class="form__wrapper">
           <fieldset class="info-about">
@@ -79,7 +81,7 @@
           </fieldset>
         </div>
         <fieldset class="data-contacts">
-          <legend class="data-contacts__title form-title">Контактные&nbsp;данные (владельца&nbsp;кота)</legend>
+          <legend class="data-contacts__title form-title"><div class="form-title__wrapper"><span>Контактные&nbsp;данные (владельца&nbsp;кота)</span></div></legend>
           <ul class="data-contacts__list">
             <li class="data-contacts__item">
               <label class="data-contacts__input-description text-worksheet" for="email" tabindex="0">e-&nbsp;mail:*</label>
@@ -105,14 +107,14 @@
           </ul>
         </fieldset>
         <fieldset class="leave-comment">
-          <legend class="leave-comment__title form-title">Комментарий</legend>
+          <legend class="leave-comment__title form-title"><div class="form-title__wrapper"><span>Комментарий</span></div></legend>
           <div class="leave-comment__wrapper">
             <label class="visually-hidden" for="comments" tabindex="0"></label>
             <textarea class="leave-comment__field text-worksheet" rows="4" cols="35" maxlength="450" name="comments" id="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
         <fieldset class="additions">
-          <legend class="additions__title form-title">Дополнительно</legend>
+          <legend class="additions__title form-title"><div class="form-title__wrapper"><span>Дополнительно</span></div></legend>
           <ul class="additions__list">
             <li class="additions__item">
               <input class="additions__input visually-hidden" type="checkbox" name="additions" value="Сахарозаменитель" id="sweetener" checked>
@@ -132,11 +134,13 @@
             </li>
           </ul>
         </fieldset>
-        <button class="form-section__button button" type="submit" formaction="https://echo.htmlacademy.ru/">Отправить заявку</button>
+        <div class="form-section__wrapper-button">
+          <button class="form-section__button button" type="submit" formaction="https://echo.htmlacademy.ru/">Отправить заявку</button>
+          <small class="form-section__legend">
+            * — Обязательные поля
+          </small>
+        </div>
       </form>
-      <small class="form-section__legend">
-        * — Обязательные поля
-      </small>
     </div>
   </section>
   <section class="address-section address-section--background">
