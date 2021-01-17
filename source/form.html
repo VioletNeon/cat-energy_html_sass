@@ -9,10 +9,12 @@
 <body class="page__body">
 <header class="page-header">
   <a class="page-header__logo" href="index.html">
-    <img class="page-header__logo-image" src="./img/logo-cat.svg" width="33" height="37" alt="Кэт энерджи">
+    <picture>
+      <source media="(min-width: 1440px)" srcset="./img/logo-cat-energy-desktop.svg">
+      <source media="(min-width: 768px)" srcset="./img/logo-cat-energy-tablet.svg">
+      <img class="page-header__logo-image" src="./img/logo-cat.svg" alt="Кэт энерджи">
+    </picture>
     <img class="page-header__logo-text logo-text" src="./img/word-logo.svg" width="101" height="18" alt="Кэт энерджи">
-    <img class="page-header__logo-tablet" src="./img/logo-cat-energy-tablet.svg" width="174" height="52" alt="Кэт энерджи">
-    <img class="page-header__logo-desktop" src="./img/logo-cat-energy-desktop.svg" width="202" height="59" alt="Кэт энерджи">
   </a>
   <nav class="main-nav main-nav--closed main-nav--nojs">
     <button class="main-nav__toggle" type="button">
@@ -138,18 +140,22 @@
     </div>
   </section>
   <section class="address-section address-section--background">
-    <div class="address-section__wrapper">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <div class="invent">
-        <p class="invent__text">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="invent__address text">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span>Санкт-Петербург</span></p>
+    <div class="address-section__container">
+      <div class="address-section__wrapper">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <div class="invent">
+          <p class="invent__text">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="invent__address text">ул. Большая Конюшенная,&nbsp;д.&nbsp;19/8 <span>Санкт-Петербург</span></p>
+        </div>
       </div>
     </div>
     <div class="address-section__map">
       <a class="address-section__map-link">
-        <img class="address-section__image-map" src="./img/location-map.jpg" width="320" height="362" alt="Месторасположение на карте - ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-        <img class="address-section__image-map-tablet" src="./img/location-map-tablet.jpg" width="768" height="400" alt="Месторасположение на карте - ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-        <img class="address-section__image-map-desktop" src="./img/location-map-desktop.jpg" width="1440" height="400" alt="Месторасположение на карте - ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./img/location-map-desktop@1x.jpg, ./img/location-map-desktop@2x.jpg">
+          <source media="(min-width: 768px)" srcset="./img/location-map-tablet@1x.jpg, ./img/location-map-tablet@2x.jpg">
+          <img class="address-section__image-map" src="./img/location-map@1x.jpg" srcset="./img/location-map@2x.jpg" alt="Месторасположение на карте - ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        </picture>
       </a>
     </div>
   </section>
