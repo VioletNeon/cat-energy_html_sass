@@ -45,7 +45,8 @@
 
   @media (min-width: $desktop-width) {
     column-gap: 80px;
-    margin: 53px 40px 61px 40px;
+    margin: 53px auto 61px auto;
+    max-width: 1220px;
   }
 }
 

@@ -32,6 +32,11 @@
   @media (min-width: $tablet-width) {
     margin: 71px 40px 70px 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 71px auto 70px auto;
+    max-width: 1220px;
+  }
 }
 
 .leave-comment__field {
