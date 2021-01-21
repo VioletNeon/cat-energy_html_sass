@@ -125,6 +125,12 @@
   }
 }
 
+.make-program__image-wrapper {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .make-program__image {
   position: relative;
   top: 155px;
@@ -145,10 +151,8 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    grid-column: 3 / 4;
+    grid-column: 3 / 5;
     grid-row: 2 / 3;
-    width: 552px;
-    height: 499px;
   }
 }
 
