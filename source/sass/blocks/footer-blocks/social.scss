@@ -7,21 +7,36 @@
   justify-content: space-between;
   align-items: center;
   min-width: 125px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 20px;
+  }
 }
 
 .social__item {
   width: min-content;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 20px;
+  }
 }
 
 .social__link {
-  color: $black-color;
+  color: $special-dark-grey-color;
 
-  &:hover .social__link-logo {
-    stroke: $green-color;
+  &:hover {
+    color: $green-color;
   }
 
   &:active {
-    stroke: $green-color;
+    color: $green-color;
     opacity: 0.4;
+  }
+}
+
+.social__link-logo {
+  @media (min-width: $tablet-width) {
+    width: 35px;
+    height: 35px;
   }
 }
