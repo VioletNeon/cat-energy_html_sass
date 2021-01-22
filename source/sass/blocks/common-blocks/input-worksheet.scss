@@ -18,6 +18,16 @@
     border: 1px solid $special-dark-grey-color;
   }
 
+  &:not(:focus):invalid {
+    outline: none;
+    border: 1px solid $middle-light-gray-color;
+  }
+
+  &:not(:focus):invalid ~ .input-worksheet__icon-email,
+  &:not(:focus):invalid ~ .input-worksheet__icon-telephone {
+    color: $light-black-color;
+  }
+
   &:invalid {
     outline: 2px solid $red-color;
     border: 1px solid $red-color;
@@ -28,20 +38,20 @@
     border: 1px solid $special-dark-grey-color;
   }
 
-  &:invalid ~ .input-worksheet__icon-email path {
-    stroke: $red-color;
+  &:invalid ~ .input-worksheet__icon-email {
+    color: $red-color;
   }
 
-  &:disabled ~ .input-worksheet__icon-email path {
-    stroke: $green-color;
+  &:disabled ~ .input-worksheet__icon-email {
+    color: $green-color;
   }
 
-  &:invalid ~ .input-worksheet__icon-telephone g {
-    fill: $red-color;
+  &:invalid ~ .input-worksheet__icon-telephone {
+    color: $red-color;
   }
 
-  &:disabled ~ .input-worksheet__icon-telephone path {
-    fill: $green-color;
+  &:disabled ~ .input-worksheet__icon-telephone {
+    color: $green-color;
   }
 }
 
