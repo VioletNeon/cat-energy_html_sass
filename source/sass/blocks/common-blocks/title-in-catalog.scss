@@ -1,6 +1,3 @@
-@import "./source/sass/variables.scss";
-@import "./source/sass/mixin.scss";
-
 .title-in-catalog {
   @include font-special(400);
   @include font-size(24px, 37px);
