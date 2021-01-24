@@ -3,13 +3,13 @@
   padding: 0 20px 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 56px 30px 61px 30px;
+    padding: 50px 30px 55px 30px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 4;
     grid-row: 3 / 4;
-    padding: 57px 110px 62px 110px;
+    padding: 50px 110px 55px 110px;
   }
 }
 
@@ -28,7 +28,7 @@
 }
 
 .page-footer__logo {
-  padding: 39px 0 32px 0;
+  padding: 51px 0 43px 0;
   position: relative;
   display: flex;
   align-items: center;
@@ -62,7 +62,7 @@
 }
 
 .page-footer__social {
-  padding: 21px 0 22px 0;
+  padding: 21px 0 15px 0;
   display: flex;
   align-items: center;
   justify-content: center;

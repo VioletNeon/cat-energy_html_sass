@@ -1,5 +1,5 @@
 .invent {
-  padding: 0 0 7px 0;
+  padding: 0 0 0 0;
   display: flex;
   justify-content: center;
 
@@ -20,7 +20,7 @@
 
   text-transform: uppercase;
   width: 132px;
-  margin: 0;
+  margin: 0 15px 0 0;
 
   @media (min-width: $tablet-width) {
     @include font-size(20px, 21px);
@@ -35,12 +35,15 @@
   @media (min-width: $tablet-width) {
     @include font-size(16px, 20px);
 
+    position: relative;
+    top: -10px;
     width: min-content;
     text-align: right;
+    align-items: flex-start;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 5px;
+    padding: 0 15px 0 0;
     text-align: left;
   }
 }
@@ -48,6 +51,6 @@
 .invent__address span {
   @media (min-width: $tablet-width) {
     display: block;
-    margin: 25px 0 0 0;
+    margin: 13px 0 0 0;
   }
 }

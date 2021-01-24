@@ -33,21 +33,21 @@
 .page-header__logo-image {
   position: absolute;
   height: fit-content;
-  left: 30px;
+  left: 20px;
   width: 33px;
   top: 12px;
 
   @media (min-width: $tablet-width) {
     position: static;
     display: flex;
-    margin: 24px 0 0 0;
+    margin: 33px 0 0 0;
     width: 174px;
     height: 52px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    margin: 90px 0 0 0;
+    margin: 96px 0 0 0;
     width: 202px;
     height: 59px;
   }

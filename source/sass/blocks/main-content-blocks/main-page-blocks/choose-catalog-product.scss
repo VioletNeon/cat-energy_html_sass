@@ -4,6 +4,7 @@
   @media (min-width: $tablet-width) {
     grid-column: 1 / 4;
     grid-row: 3 / 4;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {

@@ -23,7 +23,7 @@
 .main-nav__item {
   @include font-special(500);
   @include font-size(20px, 20px);
-  padding: 35px 0 25px 0;
+  padding: 36px 0 30px 0;
   position: relative;
 
   &:first-child a {
@@ -35,6 +35,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding: 43px 0 30px 0;
+
     &--active::after {
       content: "";
       position: absolute;
@@ -46,6 +48,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 33px 0 30px 0;
     &--active-index-desktop::after {
       background-color: $white-color;
     }
@@ -121,7 +124,7 @@
   background-color: transparent;
   border: 0;
   cursor: pointer;
-  right: 25px;
+  right: 26px;
   outline: none;
   top: -34px;
 
@@ -132,7 +135,7 @@
     background-color: $black-color;
     width: 1.5px;
     height: 24.8px;
-    top: -11px;
+    top: -12px;
   }
 
   &::after {
