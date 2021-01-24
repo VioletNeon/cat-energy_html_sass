@@ -140,6 +140,11 @@
   }
 }
 
+.catalog-product__title a {
+  color: $light-black-color;
+  text-transform: uppercase;
+}
+
 .catalog-product__property {
   @media (max-width: $mobile-width-only) {
     grid-column: 3 / 5;
