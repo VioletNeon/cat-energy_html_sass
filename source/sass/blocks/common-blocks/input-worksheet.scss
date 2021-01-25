@@ -60,9 +60,17 @@
 .input-worksheet__icon-email {
   position: absolute;
   right: 15px;
+
+  @media (min-width: $desktop-width) {
+    right: 12px;
+  }
 }
 
 .input-worksheet__icon-telephone {
   position: absolute;
   right: 12px;
+
+  @media (min-width: $desktop-width) {
+    right: 17px;
+  }
 }

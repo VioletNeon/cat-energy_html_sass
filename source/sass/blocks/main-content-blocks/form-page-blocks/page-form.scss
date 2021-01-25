@@ -15,7 +15,7 @@
 .page-form__title {
   color: $black-color;
   margin: 0;
-  padding: 30px 20px 35px 20px;
+  padding: 28px 20px 36px 20px;
 
   @include font-special(400);
   @include font-size(36px, 36px);
@@ -23,13 +23,13 @@
   @media (min-width: $tablet-width) {
     grid-column: 1 / 4;
     grid-row: 1 / 2;
-    padding: 50px 70px 52px 70px;
+    padding: 44px 70px 54px 69px;
 
     @include font-size(60px, 60px);
   }
 
   @media (min-width: $desktop-width) {
-    padding: 62px 110px 52px 110px;
+    padding: 59px 110px 55px 110px;
     margin: 0 auto;
     width: 1440px;
   }

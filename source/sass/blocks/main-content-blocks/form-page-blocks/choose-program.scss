@@ -3,11 +3,11 @@
   border-bottom: 1px solid $bright-gray-color;
   border-right: none;
   border-left: none;
-  padding: 20px 0 9px 0;
+  padding: 22px 0 5px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 28px 12px 28px;
-    margin: 0 70px 0 70px;
+    padding: 25px 27px 10px 28px;
+    margin: 0 68px 0 70px;
     border: 1px solid $bright-gray-color;
   }
 
@@ -24,7 +24,7 @@
   @include reset-list-style();
 
   min-width: 280px;
-  margin: 0 20px;
+  margin: 0 20px 0 18px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -73,8 +73,8 @@
 .choose-program__input-description::before {
   content: "";
   display: block;
-  width: 22px;
-  height: 22px;
+  width: 30px;
+  height: 30px;
   flex-shrink: 0;
   flex-grow: 0;
   border: 1px solid $gray-color;
@@ -92,7 +92,7 @@
 }
 
 .choose-program__input:checked + .choose-program__input-description::before {
-  box-shadow: inset 0 0 0 6px $white-color, inset 0 0 0 15px $green-color;
+  box-shadow: inset 0 0 0 7px $white-color, inset 0 0 0 15px $green-color;
 
 
   @media (min-width: $tablet-width) {
