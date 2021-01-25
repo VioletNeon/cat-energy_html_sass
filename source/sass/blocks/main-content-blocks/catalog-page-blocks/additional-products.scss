@@ -1,17 +1,17 @@
 .additional-products {
   border-top: 2px solid $green-color;
-  margin: 43px 0 0 0;
-  padding: 26px 0 35px 0;
+  margin: 40px 0 0 0;
+  padding: 42px 0 35px 0;
   position: relative;
 
   @media (min-width: $tablet-width) {
     margin: 90px 0 0 0;
-    padding: 94px 30px 76px 30px;
+    padding: 91px 30px 75px 30px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 98px 0 0 0;
-    padding: 94px 70px 86px 70px;
+    padding: 90px 70px 86px 70px;
   }
 }
 
@@ -39,7 +39,7 @@
   @media (min-width: $desktop-width) {
     position: relative;
     top: -117px;
-    left: 75px;
+    left: 1px;
     padding: 0;
     width: 1440px;
     height: 0;
@@ -92,7 +92,7 @@
 
 .additional-products__item {
   border-top: 1px solid $gray-color;
-  padding: 15px 0 18px 0;
+  padding: 13px 0 18px 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -128,7 +128,7 @@
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
-    padding: 28px 0 28px 0;
+    padding: 25px 0 27px 0;
 
     @include font-size(20px, 20px);
   }
@@ -144,7 +144,7 @@
 
 .additional-products__packing {
   margin: 0;
-  padding: 16px 0 14px 0;
+  padding: 14px 0 13px 0;
   display: flex;
 
   @media (min-width: $tablet-width) {
@@ -168,6 +168,7 @@
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
     align-items: center;
+    padding: 5px 20px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -187,6 +188,7 @@
     justify-content: flex-end;
     align-items: center;
     margin: 0;
+    padding: 5px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -294,6 +296,9 @@
 }
 
 .additional-products__button {
+  padding: 10px 0 10px 0;
+  @include font-size(16px, 20px);
+
   @media (min-width: $tablet-width) {
     height: 39px;
     width: 100%;

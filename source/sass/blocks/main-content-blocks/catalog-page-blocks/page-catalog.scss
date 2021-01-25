@@ -8,17 +8,19 @@
 .page-catalog__title {
   color: $black-color;
   margin: 0;
-  padding: 32px 20px 35px 20px;
+  padding: 27px 20px 40px 20px;
 
   @include font-special(400);
   @include font-size(36px, 36px);
 
   @media (min-width: $tablet-width) {
-    padding: 50px 30px 52px 30px;
+    @include font-size(60px, 60px);
+
+    padding: 45px 30px 82px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 66px 110px 87px 110px;
+    padding: 61px 110px 76px 110px;
     width: 1440px;
     margin: 0 auto;
   }
