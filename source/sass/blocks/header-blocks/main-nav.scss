@@ -49,6 +49,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 33px 0 30px 0;
+
     &--active-index-desktop::after {
       background-color: $white-color;
     }
