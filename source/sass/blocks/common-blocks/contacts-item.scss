@@ -1,4 +1,4 @@
-.input-worksheet {
+.contacts-item__input-worksheet {
   height: 45px;
   width: 100%;
   border: 1px solid $middle-light-gray-color;
@@ -25,8 +25,8 @@
     border: 1px solid $middle-light-gray-color;
   }
 
-  &:not(:focus):invalid ~ .input-worksheet__icon-email,
-  &:not(:focus):invalid ~ .input-worksheet__icon-telephone {
+  &:not(:focus):invalid ~ .contacts-item__icon-email,
+  &:not(:focus):invalid ~ .contacts-item__icon-telephone {
     color: $light-black-color;
   }
 
@@ -40,24 +40,24 @@
     border: 1px solid $special-dark-grey-color;
   }
 
-  &:invalid ~ .input-worksheet__icon-email {
+  &:invalid ~ .contacts-item__icon-email {
     color: $red-color;
   }
 
-  &:disabled ~ .input-worksheet__icon-email {
+  &:disabled ~ .contacts-item__icon-email {
     color: $green-color;
   }
 
-  &:invalid ~ .input-worksheet__icon-telephone {
+  &:invalid ~ .contacts-item__icon-telephone {
     color: $red-color;
   }
 
-  &:disabled ~ .input-worksheet__icon-telephone {
+  &:disabled ~ .contacts-item__icon-telephone {
     color: $green-color;
   }
 }
 
-.input-worksheet__icon-email {
+.contacts-item__icon-email {
   position: absolute;
   right: 15px;
 
@@ -66,7 +66,7 @@
   }
 }
 
-.input-worksheet__icon-telephone {
+.contacts-item__icon-telephone {
   position: absolute;
   right: 12px;
 

@@ -77,17 +77,17 @@
           <fieldset class="info-about">
             <legend class="visually-hidden">Введите данные Вашего кота</legend>
             <ul class="info-about__list">
-              <li class="info-about__item">
+              <li class="info-about__item contacts-item">
                 <label class="info-about__input-description text-worksheet" for="cat-name" tabindex="0">Имя:*</label>
-                <input class="info-about__input input-worksheet text-worksheet" pattern="^[А-Яа-яЁё\s]+$" type="text" name="name" value="" placeholder="Барсик" id="cat-name" required>
+                <input class="info-about__input contacts-item__input-worksheet text-worksheet" pattern="^[А-Яа-яЁё\s]+$" type="text" name="name" value="" placeholder="Барсик" id="cat-name" required>
               </li>
-              <li class="info-about__item">
+              <li class="info-about__item contacts-item">
                 <label class="info-about__input-description text-worksheet" for="cat-weight" tabindex="0">Вес&nbsp;(кг):*</label>
-                <input class="info-about__input input-worksheet text-worksheet" type="text" pattern="[0-9]" name="weight" value="" placeholder="7" id="cat-weight" required>
+                <input class="info-about__input contacts-item__input-worksheet text-worksheet" type="text" pattern="[0-9]" name="weight" value="" placeholder="7" id="cat-weight" required>
               </li>
-              <li class="info-about__item">
+              <li class="info-about__item contacts-item">
                 <label class="info-about__input-description text-worksheet" for="cat-age" tabindex="0">Возраст&nbsp;(лет):</label>
-                <input class="info-about__input input-worksheet text-worksheet" type="text" pattern="[0-9]" name="age" value="" placeholder="7" id="cat-age">
+                <input class="info-about__input contacts-item__input-worksheet text-worksheet" type="text" pattern="[0-9]" name="age" value="" placeholder="7" id="cat-age">
               </li>
             </ul>
           </fieldset>
@@ -111,36 +111,38 @@
         </div>
         <fieldset class="data-contacts">
           <legend class="data-contacts__title form-title">
-            <div class="form-title__wrapper">
-              <span>Контактные&nbsp;данные (владельца&nbsp;кота)</span>
-            </div>
+              <span class="form-title__wrapper">Контактные&nbsp;данные (владельца&nbsp;кота)</span>
           </legend>
           <ul class="data-contacts__list">
-            <li class="data-contacts__item">
+            <li class="data-contacts__item contacts-item">
               <label class="data-contacts__input-description text-worksheet" for="email" tabindex="0">e-&nbsp;mail:*</label>
-              <input class="data-contacts__input input-worksheet text-worksheet" type="email" name="email" value="" placeholder="kuklachev@gmail.com" id="email" required>
-              <svg class="input-worksheet__icon-email" width="20" height="15" fill="none">
+              <input class="data-contacts__input contacts-item__input-worksheet text-worksheet" type="email" name="email" value="" placeholder="kuklachev@gmail.com" id="email" required>
+              <svg class="contacts-item__icon-email" width="20" height="15" fill="none">
                 <use xlink:href="#form-logo-telephone"></use>
               </svg>
             </li>
-            <li class="data-contacts__item">
+            <li class="data-contacts__item contacts-item">
               <label class="data-contacts__input-description text-worksheet" for="telephone-number" tabindex="0">Телефон:*</label>
-              <input class="data-contacts__input input-worksheet text-worksheet" type="tel" pattern="([8-8]\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2})" name="telephone-number" value="" placeholder="8 (960) 900-60-90" id="telephone-number" required>
-              <svg class="input-worksheet__icon-telephone" width="20" height="21" fill="none">
+              <input class="data-contacts__input contacts-item__input-worksheet text-worksheet" type="tel" pattern="([8-8]\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2})" name="telephone-number" value="" placeholder="8 (960) 900-60-90" id="telephone-number" required>
+              <svg class="contacts-item__icon-telephone" width="20" height="21" fill="none">
                 <use xlink:href="#form-logo-message"></use>
               </svg>
             </li>
           </ul>
         </fieldset>
         <fieldset class="leave-comment">
-          <legend class="leave-comment__title form-title"><div class="form-title__wrapper"><span>Комментарий</span></div></legend>
+          <legend class="leave-comment__title form-title">
+            <span class="form-title__wrapper">Комментарий</span>
+          </legend>
           <div class="leave-comment__wrapper">
             <label class="visually-hidden" for="comments" tabindex="0"></label>
             <textarea class="leave-comment__field text-worksheet" rows="4" cols="35" maxlength="450" name="comments" id="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
         <fieldset class="additions">
-          <legend class="additions__title form-title"><div class="form-title__wrapper"><span>Дополнительно</span></div></legend>
+          <legend class="additions__title form-title">
+            <span class="form-title__wrapper">Дополнительно</span>
+          </legend>
           <ul class="additions__list">
             <li class="additions__item">
               <input class="additions__input visually-hidden" type="checkbox" name="additions" value="Сахарозаменитель" id="sweetener" checked>
