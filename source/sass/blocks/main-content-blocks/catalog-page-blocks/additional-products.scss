@@ -129,6 +129,7 @@
   @media (min-width: $tablet-width) {
     flex-grow: 1;
     padding: 25px 0 27px 0;
+    width: 245px;
 
     @include font-size(20px, 20px);
   }

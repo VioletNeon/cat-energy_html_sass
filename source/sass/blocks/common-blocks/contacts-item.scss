@@ -10,11 +10,6 @@
     padding: 0 50px 0 20px;
   }
 
-  &__invalid {
-    outline: 2px solid $red-color;
-    border: 1px solid $red-color;
-  }
-
   &:focus {
     outline: 2px solid $special-dark-grey-color;
     border: 1px solid $special-dark-grey-color;
